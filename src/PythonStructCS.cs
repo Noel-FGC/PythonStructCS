@@ -280,7 +280,7 @@ namespace PythonStructCS {
           } break;
           case "String": { // variable
              byte[] stringBytes = reader.ReadBytes(valueType.size);
-             val = Encoding.UTF8.GetString(stringBytes);
+             val = Encoding.UTF8.GetString(stringBytes).TrimEnd('\0');
           } break;
         }
         returnList.Add(val);
