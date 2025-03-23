@@ -12,7 +12,7 @@ This library is not meant to be exactly the same as the original library, nor is
 A format should be a string starting with the endian of the data, followed by specifier characters, prefixed with their count (or size),
 for example:
 
-<32s4i
+\<32s4i
 
 is interpreted as little endian (Least significant Byte first),
 a 32 byte long string (as strings are variable length),
